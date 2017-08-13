@@ -5,7 +5,7 @@
 ################################################################################
 
 #HDFPV_VERSION = 1.0
-HDFPV_VERSION = d1902a72f0fad5160142a042c5a97a5ff03deb43
+HDFPV_VERSION = 3e6eb3a2c4f2683a1dc42e60c8373eb0c481f5ce
 #HDFPV_SOURCE = libfoo-$(HDFPV_VERSION).tar.gz
 #HDFPV_SITE = http://www.foosoftware.org/download
 HDFPV_SITE = https://github.com/zygmunt/hdfpv.git
