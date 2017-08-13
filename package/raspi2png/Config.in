@@ -1,0 +1,11 @@
+config BR2_PACKAGE_RASPI2PNG
+    bool "raspi2png"
+    select BR2_PACKAGE_RPI_USERLAND 
+    select BR2_PACKAGE_RPI_USERLAND_HELLO
+    select BR2_PACKAGE_LIBPNG
+    help
+        Utility to take a snapshot of the raspberry pi screen and save it as a PNG file
+        https://github.com/zygmunt/raspi2png for of https://github.com/AndrewFromMelbourne/raspi2png
+
+        https://github.com/AndrewFromMelbourne/raspi2png
+ 

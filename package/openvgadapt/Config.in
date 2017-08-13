@@ -1,0 +1,11 @@
+config BR2_PACKAGE_OPENVGADAPT
+    bool "openvgadapt"
+    select BR2_PACKAGE_RPI_USERLAND 
+    select BR2_PACKAGE_RPI_USERLAND_HELLO
+    select BR2_PACKAGE_JPEG
+    help
+        Testbed for exploring OpenVG on the Raspberry Pi.
+        https://github.com/zygmunt/openvgadapt for of https://github.com/ajstarks/openvg
+
+        https://github.com/ajstarks/openvg
+ 

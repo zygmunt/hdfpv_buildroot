@@ -1,0 +1,2 @@
+openssl passwd -1 -salt SaltSalt SecretPassword 
+make BR2_EXTERNAL=/path/to/hdfpv_buildroot menuconfig
