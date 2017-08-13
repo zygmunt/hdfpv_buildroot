@@ -32,8 +32,10 @@ BR2_PACKAGE_HOST_MTOOLS=y
 BR2_TARGET_ROOTFS_EXT2=y
 BR2_TARGET_ROOTFS_EXT2_4=y
 # BR2_TARGET_ROOTFS_TAR is not set
-BR2_ROOTFS_POST_BUILD_SCRIPT="board/raspberrypi2/post-build.sh"
-BR2_ROOTFS_POST_IMAGE_SCRIPT="board/raspberrypi2/post-image.sh"
+
+# HDFPV board
+BR2_ROOTFS_POST_BUILD_SCRIPT="$(BR2_EXTERNAL_HDFPV_PATH)/board/raspberrypi2/post-build.sh"
+BR2_ROOTFS_POST_IMAGE_SCRIPT="$(BR2_EXTERNAL_HDFPV_PATH)/board/raspberrypi2/post-image.sh"
 
 # HDFPV
 BR2_PACKAGE_HDFPV=y
