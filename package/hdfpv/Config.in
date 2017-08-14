@@ -18,6 +18,9 @@ config BR2_PACKAGE_HDFPV
     select BR2_PACKAGE_LINUX_FIRMWARE_ATHEROS_9271
     select BR2_PACKAGE_LINUX_FIRMWARE_RALINK_RT2XX
     select BR2_PACKAGE_DOS2UNIX
+    select BR2_PACKAGE_UTIL_LINUX
+    select BR2_PACKAGE_UTIL_LINUX_KILL
+    select BR2_PACKAGE_UTIL_LINUX_SCHEDUTILS
     help
         hdfpv makes things easy with buildroot
 

@@ -5,7 +5,7 @@
 ################################################################################
 
 #HDFPV_VERSION = 1.0
-HDFPV_VERSION = 3e6eb3a2c4f2683a1dc42e60c8373eb0c481f5ce
+HDFPV_VERSION = 34aa3284daa4c7cf2bf94012202f9c44f46a1925
 #HDFPV_SOURCE = libfoo-$(HDFPV_VERSION).tar.gz
 #HDFPV_SITE = http://www.foosoftware.org/download
 HDFPV_SITE = https://github.com/zygmunt/hdfpv.git
@@ -48,8 +48,8 @@ define HDFPV_INSTALL_TARGET_CMDS
 	$(INSTALL) -D -m 0644 $(@D)/boot/config.txt $(BINARIES_DIR)/rpi-firmware/config.txt
 	$(INSTALL) -D -m 0644 $(@D)/boot/cmdline.txt $(BINARIES_DIR)/rpi-firmware/cmdline.txt
 	
-	$(INSTALL) -D -m 0644 $(@D)/boot/wifibroadcast.txt $(BINARIES_DIR)/rpi-firmware/wifibroadcast.txt
-	$(INSTALL) -D -m 0644 $(@D)/boot/osdconfig.txt $(BINARIES_DIR)/rpi-firmware/osdconfig.txt
+	$(INSTALL) -D -m 0644 $(@D)/boot/wifibroadcast.txt $(BINARIES_DIR)/wifibroadcast.txt
+	$(INSTALL) -D -m 0644 $(@D)/boot/osdconfig.txt $(BINARIES_DIR)/osdconfig.txt
 	
 	$(INSTALL) -D -m 0755 $(@D)/scripts/S50wifibroadcast $(TARGET_DIR)$(_HDFPV_PREFIX)/S50wifibroadcast
 	$(INSTALL) -D -m 0644 $(@D)/scripts/hdfpv_functions.sh $(TARGET_DIR)$(_HDFPV_PREFIX)/hdfpv_functions.sh
